@@ -3,11 +3,6 @@
 
 namespace StringUtils {
     void parseName(const std::string& fullName, std::string* firstName, std::string* lastName){
-        //take a full name and use the pointer argu-ments to return the separated first and last names
-        //go through full name and
-        //char delimiter = ' ';
-        //std::vector<std::string> full_name = split(full_name, delimiter);
-        //deal with the middle initial part...
         char del = ' ';
         std::string first_name = "";
         bool first_name_true = true;
@@ -23,16 +18,11 @@ namespace StringUtils {
                     last_name += fullName[i];
             }
             else{
-                
                 first_name_true = false;
             }
-            
         }
         *firstName = first_name;
         *lastName = last_name;
-
-        
-        
     }
     std::string getUsername(const std::string& email){
         //take a full email address and return the username part (everything before the @symbol)
@@ -50,7 +40,6 @@ namespace StringUtils {
                 user_name_true = false;
             }
         }
-        
         return email;
     }
 
